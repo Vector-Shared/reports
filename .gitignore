@@ -1,0 +1,16 @@
+﻿# Ignore files containing date-like patterns or the word "audit"
+# Date patterns covered:
+#  - YYYY-MM-DD, YYYYMMDD, YYYY_MM_DD
+#  - YYYY-MM, YYYY_MM
+
+*[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*
+*[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]*
+*[0-9][0-9][0-9][0-9]_[0-9][0-9]_[0-9][0-9]*
+*[0-9][0-9][0-9][0-9]-[0-9][0-9]*
+*[0-9][0-9][0-9][0-9]_[0-9][0-9]*
+
+# audit in filenames (any extension)
+*audit*
+
+# Staging folder (local only)
+reports_staging/
